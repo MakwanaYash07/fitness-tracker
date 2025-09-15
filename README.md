@@ -1,4 +1,4 @@
-# Fitness Tracker (finished)
+# Fitness Tracker
 
 ## Prereqs
 - Java 17+
