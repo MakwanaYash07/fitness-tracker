@@ -1,10 +1,16 @@
-# Fitness Tracker
+# Fitness Tracker (finished)
 
-A Spring Boot REST API to manage users, workout plans and activity logs.
+## Prereqs
+- Java 17+
+- Maven 3.6+
+- MySQL 
 
-## Quick start
+## Build & run
+1. Configure DB in `src/main/resources/application.properties` (default uses MySQL).
+2. Build: `mvn clean package`
+3. Run: `mvn spring-boot:run` or `java -jar target/tracker-0.0.1-SNAPSHOT.jar`
 
-1. Configure DB: copy `src/main/resources/application.properties.example` to `src/main/resources/application.properties` and fill DB credentials.
-2. Build:
-   ```bash
-   mvn clean package
+## Endpoints (examples)
+- Register: `POST /api/users/register`
+- Login (Basic Auth): use registered user's email/password
+- Get activity logs: `GET /api/activity-logs` (auth required)
